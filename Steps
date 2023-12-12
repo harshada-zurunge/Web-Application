@@ -1,0 +1,7 @@
+Created an index.html file
+
+Created a Jenkinsfile 
+
+Created a pipeline . Added Git SCM polling option and added polling for "* * * * *"
+
+This will check the repo for every minute and if any changes are pushed in the repo , the pipeline will be executed
