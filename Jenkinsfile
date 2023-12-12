@@ -3,7 +3,7 @@ pipeline{
   stages {
     stage('Checkout'){
       steps {
-        checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'your-web-app']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/yourusername/your-web-app.git']]])
+         checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, userRemoteConfigs: [[url: 'https://github.com/harshada-zurunge/Web-Application.git']]])
       }
     }
     stage('Build'){
